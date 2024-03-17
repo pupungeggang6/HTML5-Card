@@ -20,9 +20,16 @@ function mouseUpTitle(x, y, button) {
                 if (pointInsideRectArray(x, y, UI.title.buttonStart)) {
                     scene = 'Field'
                     state = ''
+                    varAdventure.place = varSession.place
+                    varAdventure.positionPlayer = JSON.parse(JSON.stringify(dataField[varAdventure.place]["Spawn"]))
+                    loadField(varAdventure.place)
                 } else if (pointInsideRectArray(x, y, UI.title.buttonNew)) {
+                    eraseData()
                     scene = 'Field'
                     state = ''
+                    varAdventure.place = varSession.place
+                    varAdventure.positionPlayer = JSON.parse(JSON.stringify(dataField[varAdventure.place]["Spawn"]))
+                    loadField(varAdventure.place)
                 }
             }
         }
