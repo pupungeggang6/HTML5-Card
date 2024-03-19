@@ -15,6 +15,7 @@ let UI = {
 
     info : {
         rect : [80, 80, 1120, 560],
+        buttonClose : [1160, 80, 40, 40],
     },
 
     menu : {
@@ -25,4 +26,8 @@ let UI = {
         buttonExit : [320, 400, 640, 80],
         textExit : [328, 424],
     },
+
+    game : {
+        
+    }
 }

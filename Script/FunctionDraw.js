@@ -10,13 +10,13 @@ function drawSceneInit() {
 }
 
 function drawField() {
-    context.fillRect(Math.floor(varAdventure.positionPlayer[0] - 20), Math.floor(varAdventure.positionPlayer[1] - 20), 40, 40)
-
     context.fillStyle = 'Cyan'
     for (let i = 0; i < varField['Connection'].length; i++) {
         context.fillRect(varField['Connection'][i][0][0], varField['Connection'][i][0][1], varField['Connection'][i][0][2], varField['Connection'][i][0][3])
     }
     context.fillStyle = 'Black'
+
+    context.fillRect(Math.floor(varAdventure.positionPlayer[0] - 20), Math.floor(varAdventure.positionPlayer[1] - 20), 40, 40)
 }
 
 function drawInfo() {
@@ -24,6 +24,8 @@ function drawInfo() {
     context.fillRect(UI.info.rect[0], UI.info.rect[1], UI.info.rect[2], UI.info.rect[3])
     context.strokeRect(UI.info.rect[0], UI.info.rect[1], UI.info.rect[2], UI.info.rect[3])
     context.fillStyle = 'Black'
+
+    context.fillRect(UI.info.buttonClose[0], UI.info.buttonClose[1], UI.info.buttonClose[2], UI.info.buttonClose[3])
 }
 
 function drawMenu() {
