@@ -30,6 +30,7 @@ function mouseUpTitle(x, y, button) {
                     varAdventure.place = varSession.place
                     varAdventure.positionPlayer = JSON.parse(JSON.stringify(dataField[varAdventure.place]["Spawn"]))
                     loadField(varAdventure.place)
+                    loadSession()
                 }
             }
         }

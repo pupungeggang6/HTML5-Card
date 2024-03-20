@@ -3,6 +3,7 @@ let context
 
 let scene = 'Title'
 let state = ''
+let stateInfo = ''
 let menu = false
 
 let gameInstance
@@ -22,7 +23,10 @@ let varSession = {
 }
 
 let varPlayer = {
-
+    level : 1,
+    exp : 0,
+    cardList : [],
+    deckList : [],
 }
 
 let varField = {
@@ -39,5 +43,31 @@ let varAdventure = {
 }
 
 let varGame = {
+    turn : 1,
+    turnWho : 0,
 
+    handCard : [
+        [],
+        []
+    ],
+
+    handCrystal : [
+        [],
+        []
+    ],
+
+    deckCard : [
+        [],
+        []
+    ],
+
+    deckCrystal : [
+        [],
+        []
+    ],
+
+    field : [
+        [],
+        []
+    ]
 }
